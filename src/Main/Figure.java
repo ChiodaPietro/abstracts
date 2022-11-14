@@ -6,15 +6,16 @@ public abstract class Figure {
     "WITH A BODY" or abstract
     AT LEAST AN ABSTRACT METHOD
      */
-
+    private double side;
     private double[] sides;
     public Figure(double[] sides){
         this.sides=sides;
     }
-
+    public Figure(double side){this.side= side;}
     public double getSides(int pos){
         return sides[pos];
     }
+    public double getSide(){return side;}
     public double[] getSides(){
         return sides;
     }
